@@ -100,7 +100,7 @@ function veiculo_open_edit(id) {
                 $('#placa').val(veiculo.placa);
                 $('#fabricante').val(veiculo.fabricante);
                 $('#ano_fabricacao').val(veiculo.ano_fabricacao);
-                $('#tipo_combustivel').val(veiculo.tipo_combustivel);
+                $('#tipo_combustivel_id').val(veiculo.tipo_combustivel_id);
                 $('#capacidade_tanque').val(veiculo.capacidade_tanque);
             });
         }

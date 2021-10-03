@@ -30,9 +30,10 @@ class Veiculo extends Model
 
     public function getQuantidadeAbastecidaAttribute()
     {
+
         $quantidade=0;
         $this->abastecimentos()->get()->map(function($abastecimento) use(&$quantidade) {
-            //dd($abastecimento->quantidade_abastecida);
+            //Somando a quantidade de todos os abastecimentos
             $quantidade += $abastecimento->quantidade_abastecida;
         });
         return $quantidade;

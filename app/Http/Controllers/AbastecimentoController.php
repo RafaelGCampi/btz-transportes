@@ -27,17 +27,15 @@ class AbastecimentoController extends Controller
      */
     public function store(Request $request)
     {
-        //$abastecimento =  Abastecimento::with('veiculo')->find(1);
-        //dd($abastecimento);
-        //dd($request->all());
-        /* $data = $request->validate([
-            'nome'=>'requierd',
-            'placa'=>'required',
-            'tipo_combustivel'=>'required',
-            'fabricante'=>'required',
-            'ano_fabricacao'=>'required',
-            'capacidade_tanque'=>'required'
-        ]); */
+
+        $data = $request->validate([
+            'veiculo_id'=>'required',
+            'motorista_id'=>'required',
+            'data'=>'required|date',
+            //não deixar adicionar valores com zero
+            'quantidade_abastecida'=>'required|numeric|gt:0',
+            'tipo_combustivel_id'=>'required',
+        ]);
 
         $data = $request->all();
         try {

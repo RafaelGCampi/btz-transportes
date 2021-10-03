@@ -33,12 +33,12 @@ class Abastecimento extends Model
         return $this->attributes['quantidade_abastecida'] = $value;
     }
 
-    public function setTipoCombustivelAttribute($value)
+    public function setTipoCombustivelIdAttribute($value)
     {
-        if ( $value != $this->veiculo->tipo_combustivel){
+        if ( $value != $this->veiculo->tipo_combustivel_id){
             throw new ModelNotFoundException('Tipo de combustível não é compativel com o veículo.');
         }
-        return  $this->attributes['tipo_combustivel'] = $value;
+        return  $this->attributes['tipo_combustivel_id'] = $value;
     }
 
     public function veiculo(){

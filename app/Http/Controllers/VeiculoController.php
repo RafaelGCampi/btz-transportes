@@ -31,7 +31,7 @@ class VeiculoController extends Controller
         $data = $request->validate([
             'nome'=>'required',
             'placa'=>'required',
-            'tipo_combustivel'=>'required',
+            'tipo_combustivel_id'=>'required',
             'fabricante'=>'required',
             'ano_fabricacao'=>'required',
             'capacidade_tanque'=>'required'
