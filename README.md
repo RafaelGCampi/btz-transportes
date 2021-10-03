@@ -19,4 +19,4 @@
     senha: btz123456
    
 ## Banco
-    ![name-of-you-image](https://github.com/RafaelGCampi/btz-transportes/blob/master/modelagem-btz.PNG?raw=true)
+    ![name-of-you-image](https://raw.githubusercontent.com/RafaelGCampi/btz-transportes/master/modelagem-btz.PNG)
